@@ -17,13 +17,13 @@ public class EndPointsController {
         return "Welcome to the home route";
     }
 
-    @GetMapping("/tasks")
-    public String getTasks(){
-        return "These are the tasks";
+    @GetMapping("/shoppinglist")
+    public String getShoppingList(){
+        return "eggs, bananas, beer";
     }
 
-    @PostMapping("/tasks")
-    public String postTasks(){
-        return "You just posted to tasks!";
+    @PostMapping("/shoppinglist")
+    public String postShoppingList(){
+        return "You just posted to shoppinglist!";
     }
 }

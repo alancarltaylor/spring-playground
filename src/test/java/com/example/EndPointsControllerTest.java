@@ -23,21 +23,21 @@ public class EndPointsControllerTest {
     MockMvc mvc;
 
     @Test
-    public void getTasks() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/app/tasks");
+    public void getShoppingList() throws Exception {
+        RequestBuilder request = MockMvcRequestBuilders.get("/app/shoppinglist");
 
         this.mvc.perform(request)
                 .andExpect(status().isOk())
-                .andExpect(content().string("These are the tasks"));
+                .andExpect(content().string("eggs, bananas, beer"));
 
     }
     @Test
-    public void postTasks() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.post("/app/tasks");
+    public void postShoppingList() throws Exception {
+        RequestBuilder request = MockMvcRequestBuilders.post("/app/shoppinglist");
 
         this.mvc.perform(request)
                 .andExpect(status().isOk())
-                .andExpect(content().string("You just posted to tasks!"));
+                .andExpect(content().string("You just posted to shoppinglist!"));
     }
 
 }
