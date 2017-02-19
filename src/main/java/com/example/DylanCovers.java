@@ -6,6 +6,15 @@ package com.example;
 public class DylanCovers {
     private String Artist;
     private String Cover;
+    private String Album;
+
+    public String getAlbum(){
+        return Album;
+    }
+
+    public void setAlbum(String Album){
+        this.Album = Album;
+    }
 
     public String getArtist(){
         return Artist;
